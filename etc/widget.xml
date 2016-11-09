@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="instagram_widget" class="Bitbull\InstagramWidget\Block\Widget\Instagram">
+        <label translate="true">Instagram widget</label>
+        <description translate="true">Add Instagram widget in wysywig, configure API user and token in module settings</description>
+        <parameters>
+            <parameter name="instagram_channel" xsi:type="text" visible="true" sort_order="30">
+                <label translate="true">Channel Name</label>
+                <description translate="true">Please enter Instagram Channel name</description>
+            </parameter>
+            <parameter name="number_photos" xsi:type="text" required="true" visible="true" sort_order="40">
+                <label translate="true">Number of Photos to Display</label>
+                <value>5</value>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>
